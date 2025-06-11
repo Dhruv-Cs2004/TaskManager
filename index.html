@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    
+
+    <aside class="sidebar">
+      <h2>🧠 TaskMaster</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Tasks</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+
+    <main class="main">
+
+      <header class="topbar">
+        <h1>Welcome, Dhruv!</h1>
+        <button id="toggle-theme">🌗 Theme</button>
+      </header>
+
+
+      <section class="task-input">
+        <form id="task-form">
+          <input type="text" id="task-input" placeholder="Add a new task..." required />
+          <button type="submit">Add Task</button>
+        </form>
+        <div class="filters">
+          <button data-filter="all">All</button>
+          <button data-filter="completed">Completed</button>
+          <button data-filter="pending">Pending</button>
+        </div>
+      </section>
+
+
+      <section class="task-list-section">
+        <ul id="task-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
